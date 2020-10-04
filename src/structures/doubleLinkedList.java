@@ -1,5 +1,7 @@
 package structures;
 
+import main.main;
+
 public class doubleLinkedList<t> {
     doubleNode head;
     doubleNode tail;
@@ -139,5 +141,13 @@ public class doubleLinkedList<t> {
             tmp = tmp.next;
         }
         System.out.println();
+    }
+    public static void main(String[] args) {
+        doubleLinkedList lista = new doubleLinkedList();
+        
+        lista.append(2);
+        lista.append(3);
+        lista.print();
+        
     }
 }
